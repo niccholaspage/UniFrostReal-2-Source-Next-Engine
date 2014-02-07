@@ -1,13 +1,17 @@
 package com.unifrost.engine;
 
 public class BotNet {
-	private boolean miner;
-	
+	private final boolean miner;
+
 	public BotNet(boolean miner) {
 		this.miner = miner;
 	}
-	
+
 	public void mineCoin() {
-		System.out.println("Mined a bitcoin!");
+		if (miner){
+			System.out.println("Mined a bitcoin!");
+		} else {
+			System.out.println("I am not a miner!");
+		}
 	}
 }

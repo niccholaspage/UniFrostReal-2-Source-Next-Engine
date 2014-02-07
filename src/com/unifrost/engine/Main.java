@@ -2,10 +2,13 @@ package com.unifrost.engine;
 
 public class Main {
 	public static void main(String[] args){
-		System.out.println("test3");
+		System.out.println("INITIATING UNIFROSTREAL 2: SOURCE NEXT ENGINE!");
+
 		//Initialize the botnet
-		BotNet bn = new BotNet(true);
-		for(int i = 1; i<= 10; i++)
-			bn.mineCoin();
+		BotNet botNet = new BotNet(true);
+
+		for(int i = 0; i<= 10; i++){
+			botNet.mineCoin();
+		}
 	}
 }
